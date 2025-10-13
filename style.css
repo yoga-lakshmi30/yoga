@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.weather-app {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  width: 340px;
+  text-align: center;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+.weather-app:hover {
+  transform: scale(1.03);
+}
+
+.weather-app h2 {
+  font-size: 1.6rem;
+  margin-bottom: 15px;
+}
+
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.search-box input {
+  border: none;
+  outline: none;
+  padding: 10px 15px;
+  border-radius: 20px;
+  width: 70%;
+  font-size: 1rem;
+}
+
+.search-box button {
+  margin-left: 8px;
+  padding: 10px;
+  border: none;
+  border-radius: 50%;
+  background-color: #4e54c8;
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.search-box button:hover {
+  background-color: #8f94fb;
+}
+
+.weather-icon {
+  width: 100px;
+  margin: 10px auto;
+}
+
+.temp {
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+.details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  font-size: 0.9rem;
+}
+
+.details div {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 8px;
+  border-radius: 10px;
+  width: 48%;
+}
+
+footer {
+  color: white;
+  font-size: 0.8rem;
+  margin-top: 15px;
+  opacity: 0.8;
+}

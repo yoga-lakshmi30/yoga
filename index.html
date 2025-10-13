@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Live Weather Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="weather-app">
+    <h2>🌦️ Live Weather Dashboard</h2>
+
+    <div class="search-box">
+      <input type="text" id="city" placeholder="Enter city name">
+      <button onclick="getWeather()">🔍</button>
+    </div>
+
+    <div id="weather-info">
+      <img src="" id="icon" class="weather-icon" style="display:none;">
+      <div id="temp" class="temp"></div>
+      <div id="desc" class="description"></div>
+
+      <div class="details">
+        <div>🌡️ Feels: <span id="feels"></span>°C</div>
+        <div>💧 Humidity: <span id="humidity"></span>%</div>
+      </div>
+
+      <div class="details">
+        <div>💨 Wind: <span id="wind"></span> km/h</div>
+        <div>🌅 Sunrise: <span id="sunrise"></span></div>
+      </div>
+    </div>
+  </div>
+
+  <footer>Created by LIVE WEATHER DASHBOARD TEAM⚡ | Powered by OpenWeatherMap</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
